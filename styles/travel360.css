@@ -1,0 +1,9 @@
+/* shared styles */
+body {
+    font-family: Mulish;
+}
+
+.main_area {
+    max-width: 1170px;
+    margin: 0 auto;
+}
