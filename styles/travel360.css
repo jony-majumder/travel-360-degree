@@ -162,61 +162,7 @@ ul {
     margin-bottom: 48px;
     padding: 0 260px;
 }
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-    nav,
-    nav>ul,
-    .input-container,
-    .row-container {
-        flex-direction: column;
-    }
-    nav li{
-        padding-left: 0px;
-    }
-    .banner
-    {        
-        background-image: 100%, 100%;
-        /* background-repeat: no-repeat;
-        background-blend-mode: overlay; */
-        padding: 32px 24px;
-        
-    }
-    .banner h3{
-        font-size: 1rem;
-    }
-    .banner-description{
-        font-size: 0.9rem;
-    }
-    .input-container{
-        width: 100%;
-        align-items: center;
-        padding: 0;
-    }
-    .input-container input[type="text"]{
-        width: 80%;        
-    }
-    .input-design{
-        width: 85%;
-        padding: 0 16px;              
-    }
-    /* popular tours section responsive */
-    .tours-container{
-        grid-template-columns: 1fr; 
-        padding: 10px;
-    }
-    .tours-image img{
-        width: 100%;
-    }
-    /* Choose your destination section responsive */
-    .row-container img{
-        width: 100%;
-        /* margin: 10px;     */
-    }
-    .destination-text p{
-        padding: 20px;
-    }
-}
-/* ======================= */
+
 /* why choose us section styles */
 .choose-us-text {
     text-align: center;
@@ -274,3 +220,64 @@ ul {
 .hide{
     display: none;
 }
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    nav,
+    nav>ul,
+    .input-container,
+    .row-container,
+    .box-container2 {
+        flex-direction: column;
+    }
+    nav li{
+        padding-left: 0px;
+    }
+    .banner
+    {        
+        background-image: 100%, 100%;
+        /* background-repeat: no-repeat;
+        background-blend-mode: overlay; */
+        padding: 32px 24px;
+        
+    }
+    .banner h3{
+        font-size: 1rem;
+    }
+    .banner-description{
+        font-size: 0.9rem;
+    }
+    .input-container{
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+    .input-container input[type="text"]{
+        width: 80%;        
+    }
+    .input-design{
+        width: 85%;
+        padding: 0 16px;              
+    }
+    /* popular tours section responsive */
+    .tours-container,
+    .box-container{
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+    .tours-image img{
+        width: 100%;
+    }
+    /* Choose your destination section responsive */
+    .row-container img{
+        width: 100%;
+        /* margin: 10px;     */
+    }
+    .destination-text p{
+        padding: 20px;
+    }
+    /* choos us responsive */
+    .box3rd {
+        width: calc(100% - 100px);
+    }
+}
+/* ======================= */
