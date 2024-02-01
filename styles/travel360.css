@@ -164,6 +164,7 @@ ul {
 }
 
 /* why choose us section styles */
+
 .choose-us-text {
     text-align: center;
 }
@@ -207,15 +208,95 @@ ul {
     justify-content: center;
 }
 
-.box3rd {
+#box3rd {
     /* width: 573px; */
     margin-top: 24px;
-    width: calc(100% / 2 - 100px);
-    padding: 32px 53px 32px 32px;
+    width: calc(100% / 2 - 100px);    
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+/* newsletter section styles */
+.newsletter-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.newsletter-form-container{
+    border: 2px solid #FF5400;
+    border-radius: 16px;
+    padding: 20px;
+}
+.newsletter-form-container h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.newsletter-form-container p{
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+/* .newsletter-form input[type="text"], input[type="email"], input[type="submit"]{
+    display: block;
+} */
+
+.newsletter-form input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin:15px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#subscribe-button{
+    font-size: 1.25rem;
+    background: #FF5400;
+}
+.newsletter-image-container{
+    position: relative;
+}
+.newsletter-image-container img{
+    width: 100%;
+}
+.save-text{
+    position: absolute;
+    right: 0;
+    bottom: 50px;    
+    width: 200px;
+    height: 70px;
+    background-color: #FF5400;
+    transform: rotate(-30deg);
+    color: #FFF;    
+    text-align: center;
+    border-radius: 10px;
+}
+.save-text h3{
+    margin-top: 5px;
+}
+.website-address{
+    font-size: 0.8rem; 
+    padding-bottom: 10px;
+    font-weight: 200;
+    color: rgb(240, 240, 228);
+}
+/* footer section styles */
+.footer-background{
+    background-color: rgb(240, 240, 240);
+    padding: 60px 20px;
+    margin-top: 100px;
+}
+.footer-center{
+    text-align: center;
+}
+.padding-space{
+    padding: 20px 0;
+}
+/* =================== */
 /* hide styles */
 .hide{
     display: none;
@@ -276,8 +357,13 @@ ul {
         padding: 20px;
     }
     /* choos us responsive */
-    .box3rd {
+    #box3rd {
         width: calc(100% - 100px);
     }
+    /* newsletter section responsive */
+    .newsletter-container{
+        flex-direction: column-reverse;
+    }
+    
 }
 /* ======================= */
