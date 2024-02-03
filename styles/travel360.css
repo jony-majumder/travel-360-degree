@@ -32,6 +32,8 @@ body {
     color: #FFF;
     width: 174px;
     height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 main section {
@@ -82,7 +84,7 @@ nav a {
 
 .banner-title {
     color: #FFF;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 800;
     margin-top: 0;
     margin-bottom: 0;
@@ -106,15 +108,19 @@ nav a {
     border-radius: 8px;
     padding: 16px;
 }
-.input-container input[type="text"]{
+
+.input-container input[type="text"] {
     width: 155px;
     height: 50px;
     padding-left: 16px;
+    border-radius: 8px;
 }
+
 .input-design {
     width: 174px;
     height: 50px;
     padding-left: 16px;
+    border-radius: 8px;
 }
 
 /* popular tours section styles */
@@ -147,6 +153,26 @@ ul {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 800;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    /* opacity: 0.3; */
 }
 
 .destination-text {
@@ -211,27 +237,31 @@ ul {
 #box3rd {
     /* width: 573px; */
     margin-top: 24px;
-    width: calc(100% / 2 - 100px);    
+    width: calc(100% / 2 - 100px);
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+
 /* newsletter section styles */
-.newsletter-container{
+.newsletter-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-.newsletter-form-container{
+
+.newsletter-form-container {
     border: 2px solid #FF5400;
     border-radius: 16px;
     padding: 20px;
 }
-.newsletter-form-container h3{
+
+.newsletter-form-container h3 {
     font-size: 2rem;
     margin-bottom: 0;
 }
-.newsletter-form-container p{
+
+.newsletter-form-container p {
     font-size: 1.25rem;
     margin-top: 20px;
 }
@@ -240,12 +270,12 @@ ul {
     display: block;
 } */
 
-.newsletter-form input{
+.newsletter-form input {
     display: block;
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
-    margin:15px 0;
+    margin: 15px 0;
     border-radius: 8px;
     border: none;
     background-color: rgb(240, 240, 240);
@@ -253,56 +283,71 @@ ul {
     font-weight: 400;
 }
 
-#subscribe-button{
+#subscribe-button {
     font-size: 1.25rem;
     background: #FF5400;
 }
-.newsletter-image-container{
+
+.newsletter-image-container {
     position: relative;
 }
-.newsletter-image-container img{
+
+.newsletter-image-container img {
     width: 100%;
 }
-.save-text{
+
+.save-text {
     position: absolute;
     right: 0;
-    bottom: 50px;    
+    bottom: 50px;
     width: 200px;
     height: 70px;
     background-color: #FF5400;
     transform: rotate(-30deg);
-    color: #FFF;    
+    color: #FFF;
     text-align: center;
     border-radius: 10px;
 }
-.save-text h3{
+
+.save-text h3 {
     margin-top: 5px;
 }
-.website-address{
-    font-size: 0.8rem; 
+
+.website-address {
+    font-size: 0.8rem;
     padding-bottom: 10px;
     font-weight: 200;
     color: rgb(240, 240, 228);
 }
+
 /* footer section styles */
-.footer-background{
+.footer-background {
     background-color: rgb(240, 240, 240);
     padding: 60px 20px;
     margin-top: 100px;
 }
-.footer-center{
+
+.footer-center {
     text-align: center;
 }
-.padding-space{
+
+.padding-space {
     padding: 20px 0;
 }
+
+.footer-icon i {
+    padding: 20px;
+}
+
 /* =================== */
 /* hide styles */
-.hide{
+.hide {
     display: none;
 }
+
 /* Responsive styles */
 @media screen and (max-width: 600px) {
+
     nav,
     nav>ul,
     .input-container,
@@ -310,60 +355,102 @@ ul {
     .box-container2 {
         flex-direction: column;
     }
-    nav li{
+
+    nav li {
         padding-left: 0px;
     }
-    .banner
-    {        
-        background-image: 100%, 100%;
-        /* background-repeat: no-repeat;
-        background-blend-mode: overlay; */
-        padding: 32px 24px;
-        
+
+    .banner {
+        width: 100%; 
+        height: 100%;               
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        padding: 32px 0px;
+
     }
-    .banner h3{
-        font-size: 1rem;
+
+    .banner h3 {
+        font-size: 1.5rem;
     }
-    .banner-description{
-        font-size: 0.9rem;
+
+    .banner-description {
+        font-size: 0.8rem;
     }
-    .input-container{
+
+    .input-container {
         width: 100%;
         align-items: center;
         padding: 0;
     }
-    .input-container input[type="text"]{
-        width: 80%;        
+
+    .input-container input[type="text"] {
+        width: 80%;
     }
-    .input-design{
+
+    .input-design {
         width: 85%;
-        padding: 0 16px;              
+        padding: 0 16px;
     }
+
     /* popular tours section responsive */
     .tours-container,
-    .box-container{
-        grid-template-columns: 1fr; 
+    .box-container {
+        grid-template-columns: 1fr;
         padding: 10px;
     }
-    .tours-image img{
+
+    .tours-image img {
         width: 100%;
     }
+
     /* Choose your destination section responsive */
-    .row-container img{
+    .row-container img {
         width: 100%;
         /* margin: 10px;     */
     }
-    .destination-text p{
+
+    .destination-text p {
         padding: 20px;
     }
+
     /* choos us responsive */
     #box3rd {
         width: calc(100% - 100px);
     }
+
     /* newsletter section responsive */
-    .newsletter-container{
+    .newsletter-container {
         flex-direction: column-reverse;
     }
-    
+
 }
-/* ======================= */
+
+/* ======tablet or medium device============= */
+
+@media screen and (min-width: 576px) and (max-width: 960px){
+    .banner h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-description {
+        font-size: 0.8rem;
+    }
+    .input-container {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    .input-container input[type="text"] {
+        width: 80%;
+    }
+
+    .input-design {
+        width: 85%;
+        padding: 0 16px;
+    }
+    .newsletter-image-container img {
+        width: 100%;
+        height: 100%;
+    }
+}
