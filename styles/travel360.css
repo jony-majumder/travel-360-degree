@@ -148,6 +148,9 @@ ul {
     font-size: 1.25rem;
 }
 
+.tours-image img{
+    width:100%;
+}
 /* destination section styles */
 .row-container {
     display: flex;
